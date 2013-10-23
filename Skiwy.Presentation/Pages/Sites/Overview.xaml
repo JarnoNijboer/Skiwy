@@ -4,11 +4,15 @@
 						 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 						 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 						 xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+						 xmlns:sites="clr-namespace:Skiwy.Wpf.ViewModels.Sites"
 						 mc:Ignorable="d"
 						 d:DesignHeight="300" d:DesignWidth="300">
+	<UserControl.DataContext>
+		<sites:Overview/>
+	</UserControl.DataContext>
 	<Grid Style="{StaticResource ContentRoot}">
 		<!-- TODO: set @SelectedSource -->
-		<mui:ModernTab Layout="List">
+		<mui:ModernTab Layout="List" DataContext="{}">
 			<mui:ModernTab.Links>
 				<!-- TODO: set @Source -->
 				<mui:Link DisplayName="Item 1" Source="Detail.xaml#id=1" />

@@ -12,9 +12,14 @@
 		<mui:Link DisplayName="settings" Source="/Pages/Settings/Overview.xaml" />
 	</mui:ModernWindow.TitleLinks>
 	<mui:ModernWindow.MenuLinkGroups>
-		<mui:LinkGroup DisplayName="manage iis express" mui:GroupName="Sites">
+		<mui:LinkGroup DisplayName="Sites" mui:GroupName="Sites">
 			<mui:LinkGroup.Links>
-				<mui:Link DisplayName="sites" Source="Pages/Sites/Overview.xaml" />
+				<mui:Link DisplayName="list" Source="Pages/Sites/Overview.xaml" />
+			</mui:LinkGroup.Links>
+		</mui:LinkGroup>
+		<mui:LinkGroup DisplayName="AppPools" mui:GroupName="AppPools">
+			<mui:LinkGroup.Links>
+				<mui:Link DisplayName="list" Source="Pages/Sites/Overview.xaml" />
 			</mui:LinkGroup.Links>
 		</mui:LinkGroup>
 	</mui:ModernWindow.MenuLinkGroups>

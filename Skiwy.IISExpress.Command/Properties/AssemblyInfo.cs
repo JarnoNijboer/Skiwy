@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("Skiwy.Configuration.dll")]
-[assembly: AssemblyDescription("Skiwy - IIS Express Manager")]
+[assembly: AssemblyTitle("Skiwy.IISExpress.Command")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Jarno Nijboer")]
-[assembly: AssemblyProduct("Skiwy.Configuration.dll")]
-[assembly: AssemblyCopyright("Copyright © Jarno Nijboer 2013")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Skiwy.IISExpress.Command")]
+[assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 
-[assembly: Guid("ee6bb916-1800-4ca0-bcbf-d559c645cc58")]
+[assembly: Guid("49fa59bf-a196-43ec-a443-90e03a1d7f76")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -35,5 +35,5 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 
-[assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyFileVersion("1.0.*")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]

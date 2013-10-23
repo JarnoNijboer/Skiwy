@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C970A4E9-FA0A-4018-A712-AF80B050AD91}</ProjectGuid>
+    <ProjectGuid>{C6D6DFB7-5A17-4A13-843A-6DBDD1F4F030}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Skiwy.Configuration</RootNamespace>
-    <AssemblyName>Skiwy.Configuration</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <RootNamespace>Skiwy.IISExpress.Command</RootNamespace>
+    <AssemblyName>Skiwy.IISExpress.Command</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -39,8 +39,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factory\CommandFactory.cs" />
+    <Compile Include="ActionCommand.cs" />
+    <Compile Include="Interface\IActionCommand.cs" />
+    <Compile Include="Interface\ICommand.cs" />
+    <Compile Include="Interface\ICommandFactory.cs" />
+    <Compile Include="Interface\IFormat.cs" />
+    <Compile Include="Interface\ITypeCommand.cs" />
+    <Compile Include="Format.cs" />
+    <Compile Include="TypeCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

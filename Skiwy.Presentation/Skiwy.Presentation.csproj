@@ -7,8 +7,8 @@
     <ProjectGuid>{29DDAD80-D5F3-487F-9242-B551A783D548}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Skiwy.Wpf</RootNamespace>
-    <AssemblyName>Skiwy.Wpf</AssemblyName>
+    <RootNamespace>Skiwy.Presentation</RootNamespace>
+    <AssemblyName>Skiwy.Presentation</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -60,6 +60,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ViewModels\Settings\Appearance.cs" />
+    <Compile Include="ViewModels\Sites\Overview.cs" />
+    <Compile Include="ViewModels\Sites\SiteFactory.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -137,10 +139,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Skiwy.Configuration\Skiwy.Configuration.csproj">
-      <Project>{c970a4e9-fa0a-4018-a712-af80b050ad91}</Project>
-      <Name>Skiwy.Configuration</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Skiwy.Data\Skiwy.Data.csproj">
       <Project>{8aee39e0-5610-4c71-94df-cc830400b14b}</Project>
       <Name>Skiwy.Data</Name>
