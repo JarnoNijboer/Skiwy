@@ -1,4 +1,4 @@
-﻿namespace Skiwy.Wpf.Pages.Sites
+﻿namespace Skiwy.Presentation.Pages.Sites
 {
 	/// <summary>
 	///   Interaction logic for ListPage1.xaml

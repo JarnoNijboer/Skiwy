@@ -1,7 +1,10 @@
-﻿namespace Skiwy.IISExpress.Command.Interface
+﻿using System.Threading.Tasks;
+
+namespace Skiwy.IISExpress.Command.Interface
 {
 	public interface ICommandFactory
 	{
-		object Exectute(ITypeCommand type, IActionCommand action);
+		Task<T> Execute<T>(ITypeCommand type, IActionCommand action) where T : class;
+		Task<T> Execute<T>(IActionCommand action) where T : class;
 	}
 }

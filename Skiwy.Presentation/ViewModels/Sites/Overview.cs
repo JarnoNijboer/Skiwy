@@ -2,10 +2,11 @@
 
 using FirstFloor.ModernUI.Presentation;
 
+using Skiwy.Data.Factory;
 using Skiwy.Data.Interface;
 using Skiwy.Data.Models;
 
-namespace Skiwy.Wpf.ViewModels.Sites
+namespace Skiwy.Presentation.ViewModels.Sites
 {
 	internal class Overview : NotifyPropertyChanged
 	{
@@ -23,7 +24,7 @@ namespace Skiwy.Wpf.ViewModels.Sites
 			{
 				if (this.sites == null)
 				{
-					this.sites = this.siteFactory.List();
+					this.sites = this.siteFactory.List().Result;
 				}
 
 				return this.sites;
@@ -31,7 +32,7 @@ namespace Skiwy.Wpf.ViewModels.Sites
 			set
 			{
 				this.sites = value;
-				OnPropertyChanged("Sites");
+				this.OnPropertyChanged("Sites");
 			}
 		}
 	}

@@ -61,7 +61,6 @@
     </ApplicationDefinition>
     <Compile Include="ViewModels\Settings\Appearance.cs" />
     <Compile Include="ViewModels\Sites\Overview.cs" />
-    <Compile Include="ViewModels\Sites\SiteFactory.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -1,4 +1,4 @@
-﻿namespace Skiwy.Wpf
+﻿namespace Skiwy.Presentation
 {
 	/// <summary>
 	///   Interaction logic for MainWindow.xaml

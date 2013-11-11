@@ -4,7 +4,7 @@ using System.Windows.Media;
 
 using FirstFloor.ModernUI.Presentation;
 
-namespace Skiwy.Wpf.ViewModels.Settings
+namespace Skiwy.Presentation.ViewModels.Settings
 {
 	internal class Appearance : NotifyPropertyChanged
 	{
@@ -89,7 +89,7 @@ namespace Skiwy.Wpf.ViewModels.Settings
 				if (this.selectedTheme != value)
 				{
 					this.selectedTheme = value;
-					OnPropertyChanged("SelectedTheme");
+					this.OnPropertyChanged("SelectedTheme");
 
 					// and update the actual theme
 					AppearanceManager.Current.ThemeSource = value.Source;
@@ -105,7 +105,7 @@ namespace Skiwy.Wpf.ViewModels.Settings
 				if (this.selectedFontSize != value)
 				{
 					this.selectedFontSize = value;
-					OnPropertyChanged("SelectedFontSize");
+					this.OnPropertyChanged("SelectedFontSize");
 
 					AppearanceManager.Current.FontSize = value == FontLarge ? FontSize.Large : FontSize.Small;
 				}
@@ -120,7 +120,7 @@ namespace Skiwy.Wpf.ViewModels.Settings
 				if (this.selectedAccentColor != value)
 				{
 					this.selectedAccentColor = value;
-					OnPropertyChanged("SelectedAccentColor");
+					this.OnPropertyChanged("SelectedAccentColor");
 
 					AppearanceManager.Current.AccentColor = value;
 				}

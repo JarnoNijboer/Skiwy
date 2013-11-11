@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace Skiwy.Wpf.Pages.Settings
+namespace Skiwy.Presentation.Pages.Settings
 {
 	/// <summary>
 	///   Interaction logic for About.xaml

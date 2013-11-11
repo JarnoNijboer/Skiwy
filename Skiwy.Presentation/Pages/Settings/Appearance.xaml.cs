@@ -1,4 +1,4 @@
-﻿namespace Skiwy.Wpf.Pages.Settings
+﻿namespace Skiwy.Presentation.Pages.Settings
 {
 	/// <summary>
 	///   Interaction logic for Appearance.xaml
